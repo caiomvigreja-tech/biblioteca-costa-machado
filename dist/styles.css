@@ -34,7 +34,8 @@
 
 /* Ajustes orientados pelos comentários da primeira dobra */
 .hero-benefits{grid-template-columns:1fr;gap:10px;max-width:470px}
-.hero-benefits li{display:flex;align-items:flex-start}
+.hero-benefits li{display:flex;align-items:flex-start;gap:8px}
+.hero-benefits li span{width:28px;flex:0 0 28px;color:inherit}
 .hero-offer{display:block;margin-top:30px}
 .hero-offer .cta{min-width:390px}
 .lifetime-card{left:auto;right:4%;top:-42px;bottom:auto}
