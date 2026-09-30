@@ -98,7 +98,6 @@
 .offer-deadline p{margin:0;font-size:.8rem;line-height:1.35;color:#d8ddea}
 .offer-deadline .countdown{font-size:.95rem;color:#ff8b83;font-variant-numeric:tabular-nums;white-space:nowrap}
 .final-countdown{margin:22px auto 4px;font-family:"Libre Caslon Display";font-size:3rem;line-height:1;color:#c78d30;font-variant-numeric:tabular-nums;letter-spacing:.03em}
-.cta.is-expired{pointer-events:none;opacity:.55;filter:grayscale(1);box-shadow:none}
 @media (max-width:640px){.urgency{min-height:58px;padding:8px 12px;gap:5px;flex-wrap:wrap;font-size:.78rem}.urgency-icon{font-size:1rem}.urgency .countdown{font-size:.9rem}.offer-deadline{grid-template-columns:auto 1fr}.offer-deadline .countdown{grid-column:1/-1;text-align:center}.final-countdown{font-size:2.5rem}}
 
 /* Contador como divisor de seções */

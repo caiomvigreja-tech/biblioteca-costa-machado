@@ -22,6 +22,8 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 const countdownElements = document.querySelectorAll('[data-countdown]');
+const deadlineLabels = document.querySelectorAll('[data-deadline-label]');
+const deadlineMessages = document.querySelectorAll('[data-deadline-message]');
 const offerDuration = 24 * 60 * 60 * 1000;
 const storageKey = 'biblioteca-processo-vip-expira-em';
 let expirationTime;
@@ -46,12 +48,8 @@ const formatCountdown = (remaining) => {
 
 const expireOffer = () => {
   countdownElements.forEach((element) => { element.textContent = '00:00:00'; });
-  document.querySelectorAll('.cta[href*="pay.kiwify.com.br"]').forEach((button) => {
-    button.removeAttribute('href');
-    button.removeAttribute('target');
-    button.classList.add('is-expired');
-    button.innerHTML = 'CONDIÇÃO ENCERRADA';
-  });
+  deadlineLabels.forEach((element) => { element.textContent = 'ÚLTIMAS VAGAS'; });
+  deadlineMessages.forEach((element) => { element.textContent = '— inscrições ainda disponíveis'; });
 };
 
 const updateCountdown = () => {
